@@ -22,22 +22,24 @@ The core objective of Supply Chain Sentinel is to eliminate operational downtime
 
 The solution relies entirely on the Microsoft AI and Power Platform ecosystem to provide a robust, low-latency, and secure enterprise workflow:
 
-[ User / Data Stream ] 
-           │
-           ▼
+```text
+    [ User / Data Stream ] 
+               │
+               ▼
 ┌─────────────────────────────────┐
 │  Microsoft Copilot Studio Agent │ <── Primary Interaction & Reasoning Hub
 └────────────────┬────────────────┘
-│
-▼
+                 │
+                 ▼
 ┌─────────────────────────────────┐
 │      Power Automate Flows       │ <── Business Logic & Action Execution
 └────────────────┬────────────────┘
-│
-▼
+                 │
+                 ▼
 ┌─────────────────────────────────┐
 │   Microsoft Fabric Integration  │ <── Unified Data Lakehouse & Analytics
 └─────────────────────────────────┘
+```
 
 * **Microsoft Copilot Studio Agent:** Acts as the central reasoning engine that interacts with stakeholders, interprets supply chain anomalies, and coordinates background system tasks.
 * **Power Automate Flows:** Handles the complex, event-driven architecture, triggering multi-step integrations across procurement and communication channels when an incident occurs.
